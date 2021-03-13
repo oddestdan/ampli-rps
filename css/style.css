@@ -95,7 +95,31 @@ div.fadeIn {
 
 /* animation for shaking */
 
-@keyframes shake {
+@keyframes shakePlayer {
+  0% {
+    transform: translateY(0px) scale(-1, 1);
+  }
+  16% {
+    transform: translateY(-50px) scale(-1, 1);
+  }
+  33% {
+    transform: translateY(0px) scale(-1, 1);
+  }
+  49% {
+    transform: translateY(-50px) scale(-1, 1);
+  }
+  65% {
+    transform: translateY(0px) scale(-1, 1);
+  }
+  81% {
+    transform: translateY(-50px) scale(-1, 1);
+  }
+  100% {
+    transform: translateY(0px) scale(-1, 1);
+  }
+}
+
+@keyframes shakeComputer {
   0% {
     transform: translateY(0px);
   }
