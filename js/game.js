@@ -27,7 +27,16 @@ const game = () => {
     options.forEach(function (option) {
       option.addEventListener('click', function () {
         // взять рандомный выбор компьютера (через Math.random)
+        const computerOptions = ['rock', 'paper', 'scissors'];
+        const randomNumber0to2 = Math.floor(Math.random() * 3);
+        const computerChoice = computerOptions[randomNumber0to2];
+
+        // сравниваем ручки
+        compareHands(this.textContent, computerChoice);
+
         // поменять фотки для рук человека и компьютера
+        playerHand.src = `assets/${this.textContent}.png`;
+        computerHand.src = `assets/${computerChoice}.png`;
         // проиграть анимацию shake
       });
     });
