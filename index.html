@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Камень Ножницы Бумага</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="game">
+      <!-- Результаты -->
+      <div class="score">
+        <div class="player-score">
+          <h2>Игрок</h2>
+          <p>0</p>
+        </div>
+        <div class="computer-score">
+          <h2>Комп</h2>
+          <p>0</p>
+        </div>
+      </div>
+
+      <!-- Вступление -->
+      <div class="intro">
+        <h1>Игра <br />"Камень Ножницы Бумага 123"</h1>
+        <button>Играть!</button>
+      </div>
+
+      <!-- Матч -->
+      <div class="match fadeOut">
+        <h2 class="result-text">Выберите опцию</h2>
+        <div class="hands">
+          <img class="player-hand" src="assets/rock.png" alt="hand-player" />
+          <img
+            class="computer-hand"
+            src="assets/rock.png"
+            alt="hand-computer"
+          />
+        </div>
+
+        <div class="options">
+          <button class="rock">rock</button>
+          <button class="paper">paper</button>
+          <button class="scissors">scissors</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Game script -->
+    <script src="js/game.js"></script>
+  </body>
+</html>

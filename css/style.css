@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  background-color: rgb(66, 52, 87);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.score {
+  color: white;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.score h2 {
+  font-size: 30px;
+}
+
+.score p {
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.intro {
+  color: white;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: opacity 0.5s ease;
+}
+
+.intro h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.intro button,
+.match button {
+  width: 150px;
+  height: 50px;
+  background: none;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(45, 67, 117);
+  border: none;
+}
+
+.match {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease 0.5s;
+}
+
+.result-text {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+.hands,
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.player-hand {
+  transform: scale(-1, 1);
+}
+
+div.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* animation for shaking */
+
+@keyframes shake {
+  0% {
+    transform: translateY(0px);
+  }
+  16% {
+    transform: translateY(-50px);
+  }
+  33% {
+    transform: translateY(0px);
+  }
+  49% {
+    transform: translateY(-50px);
+  }
+  65% {
+    transform: translateY(0px);
+  }
+  81% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
